@@ -1,26 +1,4 @@
 ```mermaid
-%%{
-  "theme": "base",
-  "themeVariables": {
-    "primaryColor": "#f3f4f6",
-    "primaryTextColor": "#111827",
-    "primaryBorderColor": "#6b7280",
-    "lineColor": "#6b7280",
-    "secondaryColor": "#dbeafe",
-    "tertiaryColor": "#bfdbfe",
-    "git0": "#2563eb",
-    "git1": "#4f46e5",
-    "git2": "#db2777",
-    "git3": "#f59e0b",
-    "git4": "#16a34a",
-    "git5": "#ef4444",
-    "commitLabelColor": "#111827",
-    "commitLabelBackground": "#ffffff",
-    "commitLabelFontSize": "12px",
-    "tagLabelFontSize": "12px",
-    "tagLabelColor": "#ffffff"
-  }
-}%%
 gitGraph
     %% --- Initial Setup: Define the main 'prod' and 'develop' branches ---
     commit id: "v1.0.0" type: HIGHLIGHT
@@ -45,7 +23,7 @@ gitGraph
     %% --- SCENARIO 2: A bugfix is developed in parallel ---
     branch bugfix/css-issue
     checkout bugfix/css-issue
-    commit id: "fix: Correct button alignment"
+    commit id: "fix: Correct typo on homepage"
     checkout develop
     merge bugfix/css-issue id: "PR #2" tag: "Bugfix Merged"
     
